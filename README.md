@@ -332,3 +332,8 @@ If you have any problems with or questions about this image, please contact me b
 
 
 Thanks to [nimmis](https://github.com/nimmis/docker-spigot) & [itzg](https://github.com/itzg/dockerfiles/tree/master/minecraft-server)
+
+# Gideon Testing
+
+    docker run -d -it -e EULA=TRUE -e 'JVM_OPTS=-Xmx4096M -Xms2048M' -e MODE=survival --name minecraft -p 25566:25565 -v /home/gideon/minecraft:/minecraft ashdev/minecraft-spigot:latest
+
